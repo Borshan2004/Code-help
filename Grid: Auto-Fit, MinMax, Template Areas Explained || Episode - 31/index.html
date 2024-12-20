@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(32, 31, 31);
+            color: aliceblue;
+            display: grid;
+            gap: 1rem;
+            padding: 4rem;
+            grid-template-areas: 
+            
+
+            "header header header"
+            "sidebar container1  container1 "
+            "sidebar container2  container2 "
+            "footer footer  footer "
+
+            ;
+
+        }
+
+
+        .item{
+            border: 2px solid blue;
+            background-color: blueviolet;
+            padding: 1rem;
+            
+        }
+
+
+        #header{grid-area: header;} 
+        #sidebar{grid-area:sidebar;}
+        #container1{grid-area: container1;}
+        #container2{grid-area: cointainer2;}
+        #container3{grid-area: cointainer3;}
+        #footer{grid-area: footer;} 
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item" id="header">header</div>
+        <div class="item" id="sidebar" >sidebar</div>
+        <div class="item" id="container1" >container1</div>
+        <div class="item" id="cointainer2" >cointainer2</div>
+        <div class="item" id="cointainer3" >cointainer3</div>
+        <div class="item" id="footer" >footer</div>
+    </div>
+    
+</body>
+</html>
